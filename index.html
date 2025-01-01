@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Screen -->
+    <div id="main-screen">
+      <h1>HAPPY BIRTHDAY</h1>
+      <div class="button-container">
+        <!-- Buttons for changing dots to A, R, Y -->
+        <button class="color-btn" id="red-btn" onclick="handleClick('red')">
+          ...
+        </button>
+        <button
+          class="color-btn"
+          id="yellow-btn"
+          onclick="handleClick('yellow')"
+        >
+          ...
+        </button>
+        <button class="color-btn" id="green-btn" onclick="handleClick('green')">
+          ...
+        </button>
+      </div>
+      <div id="bar-container" style="display: none">
+        <button id="reveal-bar" onclick="showCard()">Click Me</button>
+      </div>
+    </div>
+
+    <!-- Card Screen -->
+    <div id="card-screen" class="hidden">
+      <div class="doodle-background">
+        <!-- Birthday doodle emojis displayed in the background -->
+        <div class="vintage-card">
+          <div class="card-content">
+            <p id="custom-message">
+              I wish you many many happy returns of the day! Todays the day to
+              celebrate you, With joy, with love, and skies so blue. The candles
+              glow, the cake is swee t, A year goI wish you many many happy
+              returns of the day! Todays the day to celebrate you, With joy,
+              with love, and skies so blue. The candles glow, the cake is swee
+              t, A year gone by, a new one t o greet. Your laughter shines, your
+              heart so bright, May happin ess surround you, day and night. A
+              wish for health , success, and cheer, FI wish you many many happy
+              returns of the day! Todays the day to celebrate you, With joy,
+              with love, and skies so blue. The candles glow, the cake is swee
+              t, A year gone by, a new one t o greet. Your laughter shines, your
+              heart so bright, May happin ess surround you, day and night. A
+              wish for health , success, and cheer, For many more day and night.
+              A wish for health , success, and cheer , For many more amazing
+              years. So heres to you, on this special day, With love and joy in
+              every way. Happy Birthday,or many more day and night. A wish for
+              health , success, and cheer , For many more amazing years. So
+              heres to you, on this special day, With love and joy in every way.
+              Happy Birthday,ne by, a new one t o greet. Your laughter shines,
+              your heart so bright, May happin ess surround you, day and night.
+              A wish forI wish you many many happy returns of the day! Todays
+              the day to celebrate you, With joy, with love, and skies so blue.
+              The candles glow, the cake is swee t, A year gone by, a new one t
+              o greet. Your laughter shines, your heart so bright, May happin
+              ess surround you, day and night. A wish for health , success, and
+              cheer, For many more day and night. A wish for health , success,
+              and cheer , For many more amazing years. So heres to you, on this
+              special day, With love and joy in every way. Happy Birthday,
+              health , success, and cheer, For many more day and night. A wish
+              for health , success, and cheer , For many more amazing years. So
+              heres to you, on this special day, With love and joy in every way.
+              Happy Birthday, lets all say, A brighter future starts today yayy
+              yay aya ayayayyay
+            </p>
+            <div class="emoji">🎂</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
